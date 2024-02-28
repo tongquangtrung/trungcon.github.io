@@ -1,0 +1,111 @@
+.container{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255,186,0);
+
+}
+.up{
+    width: 80%;
+    height:70px; 
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.up ul{
+    margin-top:0px
+}
+.up ul li{
+    /*hiển thị list theo chiều ngang*/
+    display: inline-block;
+    padding: 10px;
+}
+.up ul li a{
+    /* Bỏ gạch chân*/
+    text-decoration: none;
+    font-size: 20px;
+    /*in đậm*/
+    font-weight: bold;
+    color:black;
+    padding-left: 10px;
+}
+.up ul li a img{
+    /*Thuộc tính vertical-align sắp xếp các nội dung theo chiều dọc.
+    cụ thể ở đây căn chỉnh ảnh trong đoạn text 
+    */
+    vertical-align: middle;
+}
+.logo a{
+    padding-right: 40px;
+}
+.down{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+.search{
+    width: 550px;
+    height: 36px;
+    background-color: white;
+    margin-left: 60px;
+    /* bo tròn viền khối div*/
+    border-radius: 5px;
+}
+.search input{
+    width: 520px;
+    height: 35px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.search bottom{
+    border-bottom: 0px;
+}
+.search bottom img{
+    width: 17px;
+    height: auto;
+   vertical-align: middle;
+}
+.content{
+    width: 1000px;
+    margin: 20px auto;
+    
+    /* tạo kiểu grid gần giống kiểu bảng*/
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    padding-right: 220px;
+}
+.tem img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.tem1{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+.tem2{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+}
+.tem1 img{
+    width: 420px;
+}
+.tem2 img{
+    width: 420px;
+}
+.tem1, .tem2{
+    position: relative;
+}
+h2 {
+    /*Đè phần tử lên image*/
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: white;
+    font-size: 50px;
+}
